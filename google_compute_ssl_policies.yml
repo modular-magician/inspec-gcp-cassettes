@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: UTF-8
+      string: AUTH REQUEST
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "access_token": "ya29.c.samsamsamsamsamsamsamsamsa-thisisnintysixcharactersoftexttolooklikeanauthtokenthisisnintysixcharactersoftexttolooklikeanaut",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 30 Nov 2018 23:12:19 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/compute/v1/projects/graphite-test-sam-chef/global/sslPolicies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "compute#sslPoliciesList",
+         "id": "projects/graphite-test-sam-chef/global/sslPolicies",
+         "items": [
+          {
+           "kind": "compute#sslPolicy",
+           "id": "8801652266859527620",
+           "creationTimestamp": "2018-11-30T15:09:31.072-08:00",
+           "selfLink": "https://www.googleapis.com/compute/v1/projects/graphite-test-sam-chef/global/sslPolicies/inspec-gcp-ssl-policy",
+           "name": "inspec-gcp-ssl-policy",
+           "profile": "CUSTOM",
+           "minTlsVersion": "TLS_1_2",
+           "customFeatures": [
+            "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+            "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+           ],
+           "fingerprint": "vopdnE_aXgc="
+          }
+         ],
+         "selfLink": "https://www.googleapis.com/compute/v1/projects/graphite-test-sam-chef/global/sslPolicies"
+        }
+    http_version: 
+  recorded_at: Fri, 30 Nov 2018 23:12:19 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: UTF-8
+      string: AUTH REQUEST
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "access_token": "ya29.c.samsamsamsamsamsamsamsamsa-thisisnintysixcharactersoftexttolooklikeanauthtokenthisisnintysixcharactersoftexttolooklikeanaut",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 30 Nov 2018 23:12:19 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/compute/v1/projects/graphite-test-sam-chef/global/sslPolicies/inspec-gcp-ssl-policy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "compute#sslPolicy",
+         "id": "8801652266859527620",
+         "creationTimestamp": "2018-11-30T15:09:31.072-08:00",
+         "selfLink": "https://www.googleapis.com/compute/v1/projects/graphite-test-sam-chef/global/sslPolicies/inspec-gcp-ssl-policy",
+         "name": "inspec-gcp-ssl-policy",
+         "profile": "CUSTOM",
+         "minTlsVersion": "TLS_1_2",
+         "enabledFeatures": [
+          "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+          "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+         ],
+         "customFeatures": [
+          "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+          "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+         ],
+         "fingerprint": "vopdnE_aXgc="
+        }
+    http_version: 
+  recorded_at: Fri, 30 Nov 2018 23:12:25 GMT
+recorded_with: VCR 4.0.0
